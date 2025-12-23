@@ -45,7 +45,7 @@ public class EnhancementEfficiencyApiApplication {
 @RestController
 public class HealthController {
 
-    @GetMapping("/health")
+    @GetMapping("/hello")
     public HelloResponseDto hello() {
         return new HelloResponseDto("Hello Spring Boot!", 200);
     }
@@ -55,7 +55,7 @@ public class HealthController {
  → 이 클래스는 **HTTP 요청을 처리하는 컨트롤러**
 
 · @GetMapping("/hello")
- → /health URL로 GET 요청 시 실행
+ → /hello URL로 GET 요청 시 실행
 
 
 ### 3️⃣ REST API와의 관계
