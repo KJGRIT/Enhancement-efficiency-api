@@ -137,12 +137,14 @@ com.example.enhancementefficiencyapi
  └─ dto
      └─ HelloResponseDto.java
 ```
+<br>
 
 ## ✅ Day 1 결과물
 · Spring Boot 서버 정상 실행<br>
 · /hello REST API 구현<br>
 · JSON 응답 확인<br>
 · REST API 기본 요청/응답 흐름 이해
+<br><br>
 
 ## ✍️ Day 1 한 줄 정리
 Spring Boot로 로컬 서버를 실행하고, Controller를 통해 REST API를 구현하여
