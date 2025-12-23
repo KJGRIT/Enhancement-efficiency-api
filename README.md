@@ -1,6 +1,7 @@
-# 📘 Enhancement Efficiency API  
-## Day 1 – Spring Boot로 REST API 서버 시작하기
+# 📘 Enhancement Efficiency API 
 
+### Day 1 – Spring Boot로 REST API 서버 시작하기
+<br>
 
 ## 📌 Day 1 목표
 
@@ -8,9 +9,7 @@
 - REST API의 기본 개념 이해
 - Controller의 역할 파악
 - Java 객체가 JSON으로 자동 변환되는 흐름 이해
-
----
-
+<br><br>
 ## 🛠 사용 기술 스택 (Day 1)
 
 - **Java 17**
@@ -18,8 +17,7 @@
 - **Gradle**
 - **IntelliJ IDEA**
 - JSON 처리: **Jackson (Spring Boot 기본 내장)**
-
----
+<br><br>
 
 ## 🧠 Day 1 학습 내용 정리
 
@@ -128,8 +126,7 @@ DTO는:
 > **👉 교훈**
 > 프레임워크의 자동화된 기능에 의존하기보다 **프로젝트 구조와 빌드 설정(Gradle)을 직접 이해**하는 것이 문제 해결의 핵심임을 학습했습니다.
 
-
----
+<br>
 
 ## 📂 Day 1 기준 프로젝트 구조
 ```
@@ -141,16 +138,14 @@ com.example.enhancementefficiencyapi
      └─ HelloResponseDto.java
 ```
 
----
-
 ### ✅ Day 1 결과물
-    · Spring Boot 서버 정상 실행 
-    · /hello REST API 구현
-    · JSON 응답 확인
-    · REST API 기본 요청/응답 흐름 이해
+· Spring Boot 서버 정상 실행<br>
+· /hello REST API 구현<br>
+· JSON 응답 확인<br>
+· REST API 기본 요청/응답 흐름 이해
 
 ### ✍️ Day 1 한 줄 정리
-    Spring Boot로 로컬 서버를 실행하고, Controller를 통해 REST API를 구현하여
-    Java 객체가 JSON으로 자동 변환되는 기본 구조를 이해했다.
+Spring Boot로 로컬 서버를 실행하고, Controller를 통해 REST API를 구현하여
+Java 객체가 JSON으로 자동 변환되는 기본 구조를 이해했다.
 
     
