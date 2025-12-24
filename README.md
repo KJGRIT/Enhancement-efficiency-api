@@ -5,7 +5,7 @@
 
 <br>
 
-# 2025.12.23 Day 1 – Spring Boot로 REST API 서버 시작하기<a id="start-api-server></a>
+# 2025.12.23 Day 1 – Spring Boot로 REST API 서버 시작하기<a id="start-api-server"></a>
 
 <br>
 
