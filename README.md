@@ -43,7 +43,7 @@ public class EnhancementEfficiencyApiApplication {
 
 ```java
 @RestController
-public class HealthController {
+public class HelloController {
 
     @GetMapping("/hello")
     public HelloResponseDto hello() {
@@ -133,7 +133,7 @@ DTO는:
 com.example.enhancementefficiencyapi
  ├─ EnhancementEfficiencyApiApplication.java
  ├─ controller
- │   └─ HealthController.java
+ │   └─ HelloController.java
  └─ dto
      └─ HelloResponseDto.java
 ```
