@@ -1,6 +1,6 @@
 # 📘 Enhancement Efficiency API 
 
-### Day 1 – Spring Boot로 REST API 서버 시작하기
+### 2025.12.23 Day 1 – Spring Boot로 REST API 서버 시작하기
 <br>
 
 ## 📌 Day 1 목표
