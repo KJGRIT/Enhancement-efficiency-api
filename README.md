@@ -1,11 +1,11 @@
 # 📘 Enhancement Efficiency API 
 ## 📌 목차
-1. [Spring Boot로 REST API 서버 시작하기](#1-Spring-Boot로-REST-API-서버-시작하기)
-2. [Controller / Service 분리와 구조 이해](Controller-/-Service-분리와-구조-이해)
+1. [Spring Boot로 REST API 서버 시작하기](#start-api-server)
+2. [Controller / Service 분리와 구조 이해](#controller-/-service-separation)
 
 <br>
 
-# 2025.12.23 Day 1 – Spring Boot로 REST API 서버 시작하기
+# 2025.12.23 Day 1 – Spring Boot로 REST API 서버 시작하기<a id="start-api-server</a>
 
 <br>
 
@@ -164,7 +164,7 @@ Java 객체가 JSON으로 자동 변환되는 기본 구조를 이해했다.
 ---
 <br>
 
-# 2025.12.24 Day 2 — Controller / Service 분리와 구조 이해
+# 2025.12.24 Day 2 — Controller / Service 분리와 구조 이해<a id="controller-/-service-separation"></a>
 <br>
 
 ## 🎯 Day 2 목표
