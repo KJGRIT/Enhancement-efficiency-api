@@ -1,4 +1,7 @@
 # 📘 Enhancement Efficiency API 
+## 📌 목차
+1. [Spring Boot로 REST API 서버 시작하기](#1-Spring-Boot로-REST-API-서버-시작하기)
+2. [Controller / Service 분리와 구조 이해](Controller-/-Service-분리와-구조-이해)
 
 <br>
 
