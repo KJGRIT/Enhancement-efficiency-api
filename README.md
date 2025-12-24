@@ -1,6 +1,9 @@
 # 📘 Enhancement Efficiency API 
 
-### 2025.12.23 Day 1 – Spring Boot로 REST API 서버 시작하기
+<br>
+
+# 2025.12.23 Day 1 – Spring Boot로 REST API 서버 시작하기
+
 <br>
 
 ## 📌 Day 1 목표
@@ -149,5 +152,141 @@ com.example.enhancementefficiencyapi
 ## ✍️ Day 1 한 줄 정리
 Spring Boot로 로컬 서버를 실행하고, Controller를 통해 REST API를 구현하여
 Java 객체가 JSON으로 자동 변환되는 기본 구조를 이해했다.
+<br>
 
-    
+<br>
+
+<br>
+
+---
+<br>
+
+# 2025.12.24 Day 2 — Controller / Service 분리와 구조 이해
+<br>
+
+## 🎯 Day 2 목표
+
+· Controller와 Service의 역할 차이 이해
+
+· 로직 분리를 통한 코드 가독성 향상
+
+· 실무에서 사용하는 기본 패키지 구조 학습
+
+· REST API 구조를 계층별로 이해하기
+<br><br>
+
+## 🧠 Day 2 학습 내용 정리
+
+### 1️⃣ 왜 Controller에 로직을 넣으면 안 될까?
+
+처음 Spring Boot를 배우면 Controller에 모든 코드를 작성하기 쉽다.
+하지만 이는 실무에서 **좋지 않은 구조**다.
+
+#### ❌ Controller에 로직을 모두 넣을 경우 문제점
+
+· 코드가 길어져 가독성이 떨어짐
+
+· 기능이 늘어날수록 수정이 어려움
+
+· 테스트 코드 작성이 힘듦
+
+· 오류 발생 시 원인 추적이 어려움
+
+**👉 Controller는 최대한 얇게 유지해야 한다**
+
+### 2️⃣ 역할 분리의 핵심 개념
+
+Spring Boot에서는 역할에 따라 파일을 분리한다.
+
+| **계층** | **역할** |
+|:---|:---|
+| Controller | 요청(Request) 수신, 응답(Response) 반환|
+| Service | 비즈니스 로직 처리|
+| Repository | DB 접근 및 데이터 관리|
+| DTO |	데이터 전달 객체|
+
+### 3️⃣ Service 계층 추가
+#### HelloService 생성 
+```
+@Service
+public class HelloService {
+
+    public HelloResponseDto getHello() {
+        return new HelloResponseDto("Hello Spring Boot!", 200);
+    }
+}
+```
+#### Service의 역할
+
+· 실제 동작 로직 담당
+
+· 계산, 조건처리, 데이터 가공
+
+· Controller와 Repository 사이의 중간 계층
+
+### 4️⃣ Controller에서 Service 호출
+```
+@RestController
+public class HelloController {
+
+    private final HelloService helloService;
+
+    public HelloController(HelloService helloService) {
+        this.helloService = helloService;
+    }
+
+    @GetMapping("/hello")
+    public HelloResponseDto hello() {
+        return new HelloResponseDto("Hello Spring Boot!", 200);
+    }
+}
+```
+#### 흐름 정리
+```
+브라우저 요청
+
+ → Controller (요청/응답)
+ 
+ → Service (로직 처리)
+ 
+ → DTO 반환
+ 
+ → JSON 응답
+```
+
+<br>
+
+### 📂 Day 2 기준 프로젝트 구조
+```
+src/main/java/com/example/enhancementefficiencyapi
+├── controller
+│   └── HealthController.java
+├── service
+│   └── HelloService.java
+├── repository
+├── dto
+│   └── HelloResponseDto.java
+└── EnhancementEfficiencyApiApplication.java
+
+```
+<br>
+
+### ✅ Day 2 핵심 요약 및 결과
+
+· Controller는 요청/응답만 담당한다
+
+· Service는 비즈니스 로직을 담당한다
+
+· 역할 분리는 가독성과 유지보수를 위한 필수 구조다
+
+· REST API는 데이터를 주고받는 방식이다
+
+<br>
+
+### 📝 Day 2 한 줄 정리
+
+“기능이 아니라 구조를 설계하는 연습을 시작했다.”
+
+<br><br><br>
+
+---
