@@ -7,6 +7,6 @@ import lombok.Getter;
 @AllArgsConstructor
 public class HelloResponseDto {
 
-    private String message;
-    private int status;
+    private Long id;
+    private String content;
 }
